@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<GridPane hgap="10" prefHeight="377.0" prefWidth="614.0" stylesheets="@style.css" vgap="10" xmlns="http://javafx.com/javafx/8.0.112-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ekropka.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <VBox prefWidth="574.0" GridPane.hgrow="ALWAYS" GridPane.vgrow="ALWAYS">
+         <GridPane.margin>
+            <Insets left="20.0" right="20.0" />
+         </GridPane.margin>
+         <children>
+            <HBox accessibleText="asds" prefWidth="200.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <com.ekropka.MapPane fx:id="mapPane" prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+                  <Button fx:id="showFolderPicker" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#handleButtonClick" prefWidth="100.0" text="wybierz folder" textAlignment="CENTER">
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+               <padding>
+                  <Insets top="20.0" />
+               </padding>
+            </HBox>
+            <Label alignment="TOP_LEFT" disable="true" nodeOrientation="LEFT_TO_RIGHT" text="wybierz folder wtórym zapisane zostaną kafelki" VBox.vgrow="NEVER" />
+         </children>
+      </VBox>
+   </children>
+</GridPane>
